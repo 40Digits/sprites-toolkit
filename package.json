@@ -1,0 +1,23 @@
+{
+  "name": "sprites-toolkit",
+  "version": "0.1.0",
+  "description": "The bare-bones image spriting tool of the 40Digits dev team.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/40Digits/sprites-toolkit"
+  },
+  "main": "main.js",
+  "scripts": {
+    "start": "npm run build",
+    "build": "node _build.js",
+    "watch": "chokidar \"./**/*.png\" -c \"npm run build\""
+  },
+  "author": "40Digits Developers <developers@40digits.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "chokidar-cli": "^1.2.0",
+    "colors": "^1.1.2",
+    "node-notifier": "^5.1.2",
+    "sprity": "^1.0.8"
+  }
+}
